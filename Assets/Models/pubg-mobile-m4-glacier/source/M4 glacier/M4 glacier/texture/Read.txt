@@ -1,0 +1,1 @@
+put (glacier.png) and (glacier normal.png) on every part of the gun
