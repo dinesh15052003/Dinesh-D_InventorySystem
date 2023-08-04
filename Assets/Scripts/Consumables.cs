@@ -24,10 +24,15 @@ public class Consumables : MonoBehaviour
 
     private void OnClick()
     {
+        bool isWeapon = consumables.gameObject.CompareTag("Weapon");
+        if (isWeapon && BagManager.hasWeapon)
+        {
+            return;
+        }
         Sprite image = consumables.gameObject.GetComponent<BaseItem>().image;
         string name = consumables.gameObject.GetComponent<BaseItem>().Name;
         int count = consumables.gameObject.GetComponent<BaseItem>().count;
-        bagmanager.AddBagContent(image, name, count);
+        bagmanager.AddBagContent(image, name, count, isWeapon);
         Destroy(consumables);
         Destroy(gameObject);
     }

@@ -34,6 +34,11 @@ public class ItemCollection : MonoBehaviour
             GameObject btn = Instantiate(buttonTemplate, scrollViewContent.transform);
             btn.transform.GetChild(1).GetComponent<Image>().sprite = other.gameObject.GetComponentInParent<BaseItem>().image;
             btn.transform.GetChild(2).GetComponent<TMP_Text>().text = other.gameObject.GetComponentInParent<BaseItem>().Name;
+            btn.transform.GetChild(3).GetComponent<TMP_Text>().text = other.gameObject.GetComponentInParent<BaseItem>().count.ToString();
+            if (other.gameObject.transform.parent.CompareTag("Weapon"))
+            {
+                btn.transform.GetChild(4).GetComponent<TMP_Text>().text = other.gameObject.GetComponentInParent<BaseItem>().Description;
+            }
             btn.transform.GetComponent<Consumables>().consumables = other.gameObject.transform.parent.gameObject;
             nearbyItems.Add(other.gameObject, btn);
         }

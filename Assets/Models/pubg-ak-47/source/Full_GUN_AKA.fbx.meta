@@ -3,7 +3,27 @@ guid: c71b25defe5da774a885c482ebba90de
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mag1
+    second: {fileID: 2100000, guid: ced9623a6bd31a840b8fc2b46aaaeb30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_trig
+    second: {fileID: 2100000, guid: a2b9d2a32fa266f4eb97148cb308be7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: color_body
+    second: {fileID: 2100000, guid: abed5d9a683611844b6310e59c104e5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: 29e6ae0904cb4214fa3ced53e57c9e8d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

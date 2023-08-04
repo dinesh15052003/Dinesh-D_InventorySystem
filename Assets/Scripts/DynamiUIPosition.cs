@@ -5,6 +5,7 @@ using UnityEngine;
 public class DynamiUIPosition : MonoBehaviour
 {
     private RectTransform rectTransform;
+    public int side;
 
     // Start is called before the first frame update
     void Awake()
@@ -16,6 +17,6 @@ public class DynamiUIPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rectTransform.sizeDelta = new Vector2(Screen.width/2, Screen.height);
+        rectTransform.localPosition = new Vector3(side * Screen.width / 4, 0.0f, 0.0f); 
     }
 }
