@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6653261774407519885}
-  - component: {fileID: 2526757357218184985}
   m_Layer: 0
   m_Name: Muzzle
   m_TagString: Untagged
@@ -32,21 +31,6 @@ Transform:
   m_Father: {fileID: 3571626813729077640}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &2526757357218184985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358858803283285278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fefe1a53c0b3812499a7fa934c002ad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 5916357365789929458, guid: f4860ebc6ab81ce47a0ea68125a3d877, type: 3}
-  bulletSpeed: 30
-  fireRate: 0.05
 --- !u!1 &3571626812725728574
 GameObject:
   m_ObjectHideFlags: 0

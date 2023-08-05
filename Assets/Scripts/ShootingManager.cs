@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ShootingManager : MonoBehaviour
 {
+    [Header("Shooting")]
+    public Shooting shooting;
+
     [Header("Animator")]
     public Animator animator;
 
@@ -36,7 +39,7 @@ public class ShootingManager : MonoBehaviour
                 else if (BagManager.currentGun == "AKM")
                     audioSource.PlayOneShot(shootAudio2);
                 animator.SetTrigger("Shoot");
-                GameObject.Find("Muzzle").GetComponent<Shooting>().Shoot();
+                shooting.Shoot();
             }
         }
     }

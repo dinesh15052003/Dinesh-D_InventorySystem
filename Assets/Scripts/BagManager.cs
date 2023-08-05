@@ -6,12 +6,15 @@ using UnityEngine.UI;
 
 public class BagManager : MonoBehaviour
 {
+    [Header("Audio Manager")]
+    public AudioManager audioManager;
+
     [Header("UI")]
     public GameObject bagScrollView;
     public GameObject scrollViewContent;
     public GameObject bagContentTemplate;
 
-    [Header("Right Hand")]
+    [Header("Hand")]
     public GameObject rightHand;
 
     [Header("Gun Prefabs")]
@@ -49,7 +52,8 @@ public class BagManager : MonoBehaviour
         
     }
     public void AddBagContent(Sprite sprite, string name, int count, bool isWeapon)
-    { 
+    {
+        audioManager.PlayItemPickUpSound();
         if (isWeapon)
         {
             if (name == "M416")

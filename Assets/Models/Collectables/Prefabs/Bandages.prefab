@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2391801129301012746}
   - component: {fileID: 2391801129301012748}
   - component: {fileID: 2391801129301012747}
-  - component: {fileID: 2391801129301012745}
   - component: {fileID: 2391801129301012749}
+  - component: {fileID: 4709075613778170406}
   m_Layer: 0
   m_Name: bandage_model
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2149740179557065751}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0005, y: -0.05159998, z: -0.6036}
+  m_LocalPosition: {x: 0.0005, y: 0.3, z: -0.6036}
   m_LocalScale: {x: 50, y: 49.999992, z: 49.999992}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -85,20 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2391801129301012745
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149740179557065751}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2842683310417224088, guid: d55c2b59626f23248b52672855e96484, type: 3}
 --- !u!54 &2391801129301012749
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,6 +101,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4709075613778170406
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149740179557065751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.005
+  m_Center: {x: 0, y: -0.012001301, z: 0.0009936502}
 --- !u!1 &6359495645409434547
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6359495645409434547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

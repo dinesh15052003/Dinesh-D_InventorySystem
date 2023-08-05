@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DroppingManager : MonoBehaviour
 {
+    public AudioManager audioManager;
+
     public Transform parentPlayer;
 
     [SerializeField] private List<GameObject> collectableList = new List<GameObject>();
@@ -31,6 +33,7 @@ public class DroppingManager : MonoBehaviour
     {
         if (count > 0)
         {
+            audioManager.PlayItemDropSound();
             GameObject prefab = Instantiate(prefabIndexPairs[name]);
             if (prefab.CompareTag("Weapon"))
             {

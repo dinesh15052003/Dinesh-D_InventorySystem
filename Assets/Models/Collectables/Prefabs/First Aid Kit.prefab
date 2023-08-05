@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697942878465390104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 2861242500385186484}
   - component: {fileID: 2861242500385186487}
   - component: {fileID: 2861242500385186485}
-  - component: {fileID: 2861242500385186489}
+  - component: {fileID: 1227678320017006991}
   m_Layer: 0
   m_Name: FirstAidKit_model
   m_TagString: Untagged
@@ -78,7 +78,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968398341725943719}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.63704485, y: -0.16600001, z: 0.44769442}
+  m_LocalPosition: {x: 0.63704485, y: 0.2, z: 0.44769442}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -151,8 +151,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2861242500385186489
-MeshCollider:
+--- !u!135 &1227678320017006991
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -161,7 +161,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4471911852087167793, guid: 61e631f23836eee4ab83a6d8b4e0179e, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.007
+  m_Center: {x: -0.012741426, y: 0.0090798065, z: 0.0034730213}

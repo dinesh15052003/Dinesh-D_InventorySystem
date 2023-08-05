@@ -8,7 +8,7 @@ public class Shooting : MonoBehaviour
     public float bulletSpeed;
     public float fireRate;
 
-    bool shotFired;
+    bool shotFired = false;
 
     public void Shoot()
     {
@@ -20,7 +20,7 @@ public class Shooting : MonoBehaviour
             var spawnedBullet = GameObject.Instantiate(bulletPrefab, transform.position, transform.rotation);
             var rb = spawnedBullet.GetComponent<Rigidbody>();
 
-            rb.velocity = GameObject.Find("CameraParent").transform.forward * bulletSpeed;
+            rb.velocity = GameObject.Find("ShootDirection").transform.forward * bulletSpeed;
 
             Destroy(spawnedBullet, 3f);
 

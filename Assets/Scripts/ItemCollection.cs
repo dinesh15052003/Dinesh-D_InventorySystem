@@ -51,8 +51,11 @@ public class ItemCollection : MonoBehaviour
     {
         scrollView.SetActive(false);
 
-        GameObject obj = nearbyItems[other.gameObject];
-        Destroy(obj);
-        nearbyItems.Remove(other.gameObject);
+        if (nearbyItems.ContainsKey(other.gameObject))
+        {
+            GameObject obj = nearbyItems[other.gameObject];
+            Destroy(obj);
+            nearbyItems.Remove(other.gameObject);
+        }
     }
 }

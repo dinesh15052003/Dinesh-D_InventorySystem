@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,8 @@ public class Consumables : MonoBehaviour
         bool isWeapon = consumables.gameObject.CompareTag("Weapon");
         if (isWeapon && BagManager.hasWeapon)
         {
+            GameObject.Find("Error Text").GetComponent<TMP_Text>().text = "Only one gun can be equipped at a time. Drop the gun to equip another.";
+            StartCoroutine(SetGameObjectToFalse());
             return;
         }
         Sprite image = consumables.gameObject.GetComponent<BaseItem>().image;
@@ -35,5 +38,11 @@ public class Consumables : MonoBehaviour
         bagmanager.AddBagContent(image, name, count, isWeapon);
         Destroy(consumables);
         Destroy(gameObject);
+    }
+    private System.Collections.IEnumerator SetGameObjectToFalse()
+    {
+        yield return new WaitForSeconds(1f);
+
+        GameObject.Find("Error Text").GetComponent<TMP_Text>().text = "";
     }
 }

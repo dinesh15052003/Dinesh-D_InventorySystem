@@ -45,4 +45,9 @@ public class PlayerController : MonoBehaviour
         Anim.SetFloat("Y",Input.GetAxis("Vertical"));
     }
 
+    public void ExitApplication()
+    {
+        Application.Quit();
+    }
+
 }
